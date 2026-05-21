@@ -24,6 +24,4 @@ class JobPosting < ApplicationRecord
     @salary = t.salary
     @benefits = t.benefits
   end
-
-
 end
