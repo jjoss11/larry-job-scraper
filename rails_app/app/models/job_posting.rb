@@ -15,13 +15,10 @@ class JobPosting < ApplicationRecord
 
   def initialize(t)
     @title = t.title
-    @position_type = t.position_type
-    @job_id = t.job_id
-    @school = t.school
+    @position_area = t.position_area
+    @school_district = t.school_district
     @posted_at = t.posted_at
-    @work_schedule = t.work_schedule
-    @start_date = t.start_date
-    @salary = t.salary
-    @benefits = t.benefits
+    @distance = t.distance
+    @description = t.description
   end
 end
