@@ -3,16 +3,15 @@ class CreateJobPostings < ActiveRecord::Migration[7.0]
     # Example migration — implement the exact columns when you're ready.
     create_table :job_postings do |t|
       t.string :title
-      t.string :company
-      t.string :location
+      t.string :school_district
+      t.string :position_area
       t.string :url
       t.datetime :posted_at
-      t.string :salary
-      t.text :snippet
-      t.string :source
-      # t.text :raw_html
+      t.string :distance
+      t.text :description
+      t.datetime :created_at, null: false
+      t.datetime :updated_at, null: false
 
-      t.timestamps
     end
 
     # Add indexes you need, e.g. on :url for uniqueness and :posted_at for queries
